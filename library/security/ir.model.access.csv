@@ -1,0 +1,8 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_library_user","Access library for User Sales","model_library_datamaster","sales_team.group_sale_salesman_all_leads",1,1,1,0
+"access_library_admin","Access library for Admin","model_library_datamaster","sales_team.group_sale_manager",1,1,1,1,
+"access_library_userr","Access library for User Sales","model_library_anggota","sales_team.group_sale_salesman_all_leads",1,1,1,0
+"access_library_adminn","Access library for Admin","model_library_anggota","sales_team.group_sale_manager",1,1,1,1,
+
+"access_library_userrr","Access library for User Sales","model_library_peminjaman","sales_team.group_sale_salesman_all_leads",1,1,1,0
+"access_library_adminnn","Access library for Admin","model_library_peminjaman","sales_team.group_sale_manager",1,1,1,1,
