@@ -1,0 +1,28 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+
+"access_divisi_user","Access toko for User Sales","model_toko_divisi","sales_team.group_sale_salesman_all_leads",1,1,1,0
+"access_divisi_admin","Access toko for Admin","model_toko_divisi","sales_team.group_sale_manager",1,1,1,1,
+
+"access_pegawai_user","Access toko for User Sales","model_toko_pegawai","sales_team.group_sale_salesman_all_leads",1,1,1,0
+"access_pegawai_admin","Access toko for Admin","model_toko_pegawai","sales_team.group_sale_manager",1,1,1,1,
+
+"access_customer_user","Access toko for User Sales","model_toko_customer","sales_team.group_sale_salesman_all_leads",1,1,1,0
+"access_customer_admin","Access toko for Admin","model_toko_customer","sales_team.group_sale_manager",1,1,1,1,
+
+"access_transaksi_user","Access toko for User Sales","model_toko_transaksi","sales_team.group_sale_salesman_all_leads",1,1,1,0
+"access_transaksi_admin","Access toko for Admin","model_toko_transaksi","sales_team.group_sale_manager",1,1,1,1,
+
+"access_barang_user","Access toko for User Sales","model_toko_barang","sales_team.group_sale_salesman_all_leads",1,1,1,0
+"access_barang_admin","Access toko for Admin","model_toko_barang","sales_team.group_sale_manager",1,1,1,1,
+
+"access_detail_user","Access toko for User Sales","model_toko_detail","sales_team.group_sale_salesman_all_leads",1,1,1,0
+"access_detail_admin","Access toko for Admin","model_toko_detail","sales_team.group_sale_manager",1,1,1,1,
+
+"access_detail_lines_user","Access detail_lines for User Sales","model_toko_detail_lines","sales_team.group_sale_salesman_all_leads",1,1,1,1
+"access_detail_lines_admin","Access detail_lines for Admin","model_toko_detail_lines","sales_team.group_sale_manager",1,1,1,1
+
+"access_wizdetail_user","Access detail for User Sales","model_wiz_toko_detail","sales_team.group_sale_salesman_all_leads",1,1,1,0
+"access_wizdetail_admin","Access detail for Admin","model_wiz_toko_detail","sales_team.group_sale_manager",1,1,1,1
+
+"access_detail_lines_wiz_user","Access detail_lines for User Sales","model_wiz_toko_detail_lines","sales_team.group_sale_salesman_all_leads",1,1,1,1
+"access_detail_lines_wiz_admin","Access detail_lines for Admin","model_wiz_toko_detail_lines","sales_team.group_sale_manager",1,1,1,1

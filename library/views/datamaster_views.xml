@@ -127,4 +127,5 @@
     <menuitem id="library_mmenu2" parent="library.library_mmenu" name="DataMaster"
               action="datamaster_action" sequence="10"/>
 
+
 </odoo>

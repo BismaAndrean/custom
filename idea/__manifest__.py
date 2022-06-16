@@ -9,7 +9,7 @@
     'depends': ['base','sales_team'],
     'data': [
         'security/ir.model.access.csv',
-        'views/idea_views.xml',
+        'views/divisi_views.xml',
         'views/voting_views.xml',
         'data/ir_sequence_data.xml',
     ],

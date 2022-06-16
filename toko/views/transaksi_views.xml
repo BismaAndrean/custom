@@ -1,0 +1,73 @@
+<odoo>
+    <record id="transaksi_view_form" model="ir.ui.view">
+        <field name="name">toko.view.form</field>
+        <field name="model">toko.transaksi</field>
+        <field name="arch" type="xml">
+            <form string="toko form">
+                <header>
+                    <button name="action_confirmed" string="Confirm" states="draft" type="object" class="btn-primary"/>
+                    <button name="action_settodraft" string="Set to Draft" type="object" class="btn-primary"/>
+                    <button name="action_done" string="Approve" states="confirmed" type="object" class="btn-primary"/>
+                    <button name="action_canceled" string="Cancel" states="confirmed, done" type="object"
+                            class="btn-primary" groups="sales_team.group_sale_manager"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirmed,done"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="transaksi_id"/>
+                            <field name="pega_id"/>
+                            <field name="hr_id"/>
+                        </group>
+                        <group>
+                            <field name="description"/>
+                            <field name="date"/>
+
+                            <!--<field name="state"/>-->
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Detail Transaksi" name="toko_detail">
+                            <field name="detail_ids" nolabel="1" option="{'related_on_button':True">
+                                <tree editable="bottom">
+                                    <field name="detail_id"/>
+                                    <field name="bara_id"/>
+                                    <field name="barastock"/>
+                                    <field name="baraprice"/>
+                                    <field name="totalprice"/>
+<!--                                    <field name="subtotal"/>-->
+                                </tree>
+
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="transaksi_view_list" model="ir.ui.view">
+        <field name="name">toko.view.list</field>
+        <field name="model">toko.transaksi</field>
+        <field name="arch" type="xml">
+            <tree string="toko list">
+                <field name="transaksi_id"/>
+                <field name="pega_id"/>
+                <field name="custo_id"/>
+                <field name="date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="transaksi_action" model="ir.actions.act_window">
+        <field name="name">toko</field>
+        <field name="res_model">toko.transaksi</field>
+        <field name="view_id" ref="transaksi_view_list"/>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+
+    <menuitem id="toko_mmenu5" parent="toko.toko_mmenu" name="transaksi"
+              action="transaksi_action" sequence="30"/>
+
+</odoo>

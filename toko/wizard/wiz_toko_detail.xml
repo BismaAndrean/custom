@@ -1,0 +1,32 @@
+<odoo>
+    <record id="wiz_detail_view_form" model="ir.ui.view">
+        <field name="name">wiz.detail.view.form</field>
+        <field name="model">wiz.toko.detail</field>
+        <field name="arch" type="xml">
+            <form string="detail Form">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="deta_id"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Toko" name="toko_detail">
+                            <field name="line_ids">
+                                <tree create="0" delete="0" editable="bottom">
+                                    <field name="bar_id" readonly="1"/>
+                                    <field name="ref_detail_lines_id" invisible="1"/>
+                                    <field name="stok"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                 <footer>
+                        <button name="action_confirm" string="Confirm" type="object" class="oe_highlight" data-hotkey="c"/>
+                        <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                 </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
